@@ -49,6 +49,24 @@ p{
     color: crimson;
 }
 
+.cta{
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 30px;
+    color: crimson;
+    border: 2px solid crimson;
+    background: transparent;
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    transition: 0.3s ease;
+}
+
+.cta:hover{
+    color: white;
+    background-color: crimson;
+}
 /* hero section */
 #hero{
     position: relative;
@@ -111,25 +129,6 @@ p{
 
 #hero h1:nth-child(3) span{
     animation-delay: 2.5s;
-}
-
-#hero .cta{
-    display: inline-block;
-    margin-top: 20px;
-    padding: 10px 30px;
-    color: crimson;
-    border: 2px solid crimson;
-    background: transparent;
-    font-size: 2rem;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: .1rem;
-    transition: 0.3s ease;
-}
-
-#hero .cta:hover{
-    color: white;
-    background-color: crimson;
 }
 
 #hero .hero{
@@ -284,6 +283,62 @@ p{
     transform: scale(1.1);
 }
 /* end projects section */
+
+/* about section */
+#about .about{
+    flex-direction: column-reverse;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+#about .col-left{
+    width: 360px;
+    height: 360px;
+}
+
+#about .col-right{
+    width: 100%;
+}
+
+#about .col-right h2{
+    font-size: 1.8rem;
+    font-weight: 500;
+    letter-spacing: .2rem;
+    margin-bottom: 10px;
+}
+
+#about .col-right p{
+    margin-bottom: 10px;
+}
+
+#about .col-right .cta{
+    color: black;
+    margin-bottom: 50px;
+    font-size: 2rem;
+    padding: 10px 20px;
+    letter-spacing: 0.2rem;
+}
+
+#about .col-left .about-img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border: 10px solid white;
+}
+
+#about .col-left .about-img:after{
+    position: absolute;
+    content: '';
+    left: -33px;
+    top: 19px;
+    height: 98%;
+    width: 98%;
+    border: 7px solid crimson;
+    z-index: -1;
+}
+/* end about section */
 /* keyframes */
 @keyframes text_reveal_box{
     50%{
