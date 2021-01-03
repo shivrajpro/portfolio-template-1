@@ -67,6 +67,15 @@ p{
     color: white;
     background-color: crimson;
 }
+
+.brand h1{
+    font-size: 3rem;
+    color: white;
+}
+
+.brand h1 span{
+    color: crimson;
+}
 /* hero section */
 #hero{
     position: relative;
@@ -387,6 +396,53 @@ p{
     font-weight: 500;
 }
 /* end contact section */
+
+
+/* footer */
+#footer{
+    background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+}
+
+#footer .footer p{
+    color: white;
+    font-size: 1.3rem;
+}
+
+#footer .footer{
+    min-height: 200px;
+    flex-direction: column;
+    padding-top: 50px;
+    padding-bottom: 10px;
+}
+
+#footer .footer h2{
+    color: white;
+    font-size: 2rem;
+    letter-spacing: 0.2rem;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#footer .social-icon{
+    display: flex;
+    margin-bottom: 30px;
+}
+
+#footer .social-item{
+    height: 50px;
+    width: 50px;
+    margin: 0 5px;
+}
+
+#footer .social-item{
+    filter: grayscale(1);
+    transition: .3s ease filter;
+}
+
+#footer .social-item:hover{
+    filter: grayscale(0);
+}
+/* end footer */
 /* keyframes */
 @keyframes text_reveal_box{
     50%{
