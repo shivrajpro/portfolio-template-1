@@ -26,7 +26,7 @@ a{
 /* hero section */
 #hero{
     position: relative;
-    background-image: url('./img/dark.jpg');
+    background-image: url('./img/keyboard.jpg');
     background-size: cover;
     background-position: top center;
 }
@@ -49,7 +49,20 @@ a{
     font-size: 4rem;
     color: transparent;
     display: block;
-    animation: text_reveal 0.5s ease forwards 1.5s;
+    animation: text_reveal 0.5s ease forwards 1s;
+}
+
+#hero h1:nth-child(1){
+    animation-delay: 1s;
+}
+
+#hero h1:nth-child(2){
+    animation-delay: 2s;
+}
+
+#hero h1:nth-child(3){
+    animation: text_reveal_name 0.5s ease 1s 1 forwards;
+    animation-delay: 3s;
 }
 
 #hero h1 span{
@@ -62,11 +75,23 @@ a{
     animation: text_reveal_box 1s ease 1s;
 }
 
+#hero h1:nth-child(1) span{
+    animation-delay: 0.5s;
+}
+
+#hero h1:nth-child(2) span{
+    animation-delay: 1.5s;
+}
+
+#hero h1:nth-child(3) span{
+    animation-delay: 2.5s;
+}
+
 #hero .cta{
     display: inline-block;
-    margin-top: 30px;
+    margin-top: 20px;
     padding: 10px 30px;
-    color: white;
+    color: crimson;
     border: 2px solid crimson;
     background: transparent;
     font-size: 2rem;
@@ -77,9 +102,16 @@ a{
 }
 
 #hero .cta:hover{
+    color: white;
     background-color: crimson;
 }
 
+#hero .hero{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 50px;
+    justify-content: flex-start;
+}
 /* end hero section */
 
 /* keyframes */
@@ -98,6 +130,12 @@ a{
 @keyframes text_reveal{
     100%{
         color: white;
+    }
+}
+
+@keyframes text_reveal_name{
+    100%{
+        color: crimson;
     }
 }
 /* end keyframes */
