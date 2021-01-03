@@ -79,9 +79,6 @@ p{
 /* hero section */
 #hero{
     position: relative;
-    background-image: url('./img/laptop1.jpg');
-    background-size: cover;
-    background-position: top center;
 }
 
 #hero::after{
@@ -91,8 +88,9 @@ p{
     top: 0;
     height: 100%;
     width: 100%;
-    background-color: black;
-    opacity: .6;
+    background-size: cover;
+    background-image: url('./img/keyboard.jpg');
+    opacity: .9;
     z-index: -1;
 }
 
@@ -155,6 +153,11 @@ p{
     max-width: 1500px;
     margin: 0 auto;
     padding: 100px 0;
+}
+
+#services .service-top{
+    width: 500px;
+    max-width: 0 auto;
 }
 
 #services .service-bottom{
@@ -468,3 +471,117 @@ p{
     }
 }
 /* end keyframes */
+
+/* media query for tablet */
+@media only screen and (min-width:768px){
+    .cta{
+        font-size: 2.5rem;
+        padding: 20px 60px;
+    }
+
+    h1.section-title{
+        font-size: 6rem;
+    }
+    
+    #hero  h1{
+        font-size: 7rem;
+    }
+
+    #services .services .service-item{
+        flex-basis: 45%;
+        margin: 2.5%;
+    }
+
+    #projects .project-item{
+        flex-direction: row;
+    }
+
+    #projects .project-item:nth-child(even){
+        flex-direction: row-reverse;
+    }
+
+    #projects .project-item{
+        height: 400px;
+        width: 100%;
+        margin: 0;
+        border-radius: 0;
+    }
+
+    #projects .all-projects .project-info, #projects .all-projects .project-img{
+        height: 100%;
+    }
+
+
+    #about .about{
+        flex-direction: row;
+    }
+
+    #about .about .col-left{
+        height: 400px;
+        width: 600px;
+        padding-left: 60px;
+    }
+
+    #about .about .col-right{
+        text-align: left;
+    }
+
+    #about .about .col-right h1{
+        text-align: left;
+    }
+
+    #about .about .col-left .about-img::after{
+        left: -45px;
+        top: 34px;
+        height: 98%;
+        width: 98%;
+        border: 10px solid crimson;
+    }
+
+
+    #contact .contact{
+        padding: 100px 0;
+        justify-content: center;
+        align-items: center;
+        min-height: 20vh;
+    }
+
+    #contact .contact .contact-items{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        margin: 0;
+        padding: 20px;
+    }
+    
+    #contact .contact .contact-item{
+        flex-direction: row;
+    }
+
+    #contact .contact .contact-info{
+        width: 100%;
+        padding-left: 20px;
+        text-align: left;
+    }
+
+    #contact .contact .contact-item .icon{
+        width: 100px;
+        height: 100px;
+    }
+
+    #contact .contact .contact-item .icon img{
+        object-fit: contain;
+    }
+}
+/* end media query for tablet */
+
+
+/* media query for desktop */
+@media only screen and (min-width:1200px){
+
+    #services  .services .service-item{
+        flex-basis: 22%;
+        margin: 1.5%;
+    }
+}
+/* end media query for desktop */
