@@ -14,7 +14,7 @@ document.addEventListener('scroll', ()=>{
     if(scroll_position > 250)
     header.style.backgroundColor = '#29323c';
     else
-    header.style.backgroundColor = 'transparent';
+    header.style.backgroundColor = 'rgba(31, 30, 30, 0.8)';
 })
 
 menu_item.forEach((item)=>{
